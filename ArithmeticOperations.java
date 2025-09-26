@@ -27,7 +27,6 @@ public class ArithmeticOperations {
             System.out.println("Division: Not possible (division by zero)");
             System.out.println("Modulus: Not possible (division by zero)");
         }
-
         sc.close();
     }
 }
