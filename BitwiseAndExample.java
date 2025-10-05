@@ -1,15 +1,18 @@
 //create a program that shows bitwise and between two numbers:
 
 // Program to perform bitwise AND between two numbers
+
+import java.util.Scanner;
+
 public class BitwiseAndExample {
     public static void main(String[] args) {
-        int num1 = 12; // 1100 in binary
-        int num2 = 10; // 1010 in binary
-
-        int result = num1 & num2; // Bitwise AND
-
-        System.out.println("First Number: " + num1);
-        System.out.println("Second Number: " + num2);
-        System.out.println("Bitwise AND Result: " + result);
+        Scanner input = new Scanner(System.in);
+        System.out.println("Showcasing bitwise AND operator");
+        System.out.println("Enter first number:");
+        int first = input.nextInt();
+        System.out.println("Enter second number:");
+        int second = input.nextInt();
+        int result = first & second;
+        System.out.println("result is:" + result);
     }
 }
