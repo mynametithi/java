@@ -14,17 +14,24 @@ public class isSortedArray {
     }
 
     public static boolean isDecreasing(int[] numArr) {
-        return false;
+        int i = 1;
+        while (i < numArr.length) {
+            if (numArr[i] >= numArr[i - 1]) {
+                return false;
+            }
+            i++;
+        }
+        return true;
     }
 
     public static boolean isIncreasing(int[] numArr) {
-        int i=1;
-        while(i<numArr.length){
-            if(numArr[i]>=numArr[i-1]){
-                i++;
+        int i = 1;
+        while (i < numArr.length) {
+            if (numArr[i] <= numArr[i - 1]) {
+                return false;
             }
-
+            i++;
         }
-        return false;
+        return true;
     }
 }
