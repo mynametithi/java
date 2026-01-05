@@ -3,11 +3,26 @@ import java.util.Scanner;
 public class ternaryLogicOpearator {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
-        System.out.println("Welcome to day name:");
-        System.out.println("Enter your first number:");
         System.out.println("Enter your number in day wise:");
         int day=input.nextInt();
-        switch (day) {
+        // oldSwitch(day);
+        newSwitch(day);
+    }
+    public static void newSwitch(int day){
+       String dayStr=switch(day){
+            case 1->"Sunday";
+            case 2->"Monday";
+            case 3->"Tuesday";
+            case 4->"Wednesday";
+            case 5->"Thursday";
+            case 6->"Friday";
+            case 7->"Saturdday";
+            default ->"Invalid";
+       };
+       System.out.println(dayStr);
+    }
+    public static void oldSwitch( int day){
+      switch (day) {
             case 1:
                 System.out.println("Monday");
                 break;
@@ -34,6 +49,5 @@ public class ternaryLogicOpearator {
                 System.out.println("Wrong side");
                 break;
         }
-
     }
 }
